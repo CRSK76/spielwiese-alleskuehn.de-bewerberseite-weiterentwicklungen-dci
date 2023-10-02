@@ -1,0 +1,1662 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../bilder/Hintergrundkl.jpg);
+    background-blend-mode: luminosity;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: #ea977b;
+    width: 100vw;
+    /* z-index: -50; */
+    /*border: 10px solid hotpink;*/
+    box-sizing: border-box;
+    line-height: 1.3;
+
+}
+
+div.federaußen {
+    margin: 0;
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+
+
+}
+
+div.federaußen::before {
+    content: "";
+    background-image: url(../bilder/rhythminmylife.svg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.3;
+    width: 100%;
+    /*  height: auto; */
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    right: 0px;
+    bottom: -100%;
+    left: 0px;
+
+}
+
+header {
+    padding: 3% 5% 5% 5%;
+    width: 100%;
+    height: 25%;
+    font-size: 1.3rem;
+    background-color: rgba(236, 164, 139, 0.76);
+    display: flex;
+    /* justify-content: end; */
+    gap: 10%;
+    flex-wrap: wrap;
+    opacity: 1;
+    /* align-items: flex-end; */
+
+}
+
+#hidden-checkbox {
+    appearance: none;
+
+}
+
+div.naviaußen {
+
+    flex-basis: 55%;
+
+}
+
+section.navi {
+    display: flex;
+    /*  justify-content: end; */
+    flex-direction: column;
+    align-items: flex-end;
+    flex-basis: 55%;
+
+
+}
+
+header div.naviaußen section.navi label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../bilder/menu.svg);
+    background-blend-mode: luminosity;
+    margin-bottom: 5px;
+    padding: 7px 0 7px 7px;
+    fill: #920286;
+}
+
+header div.naviaußen section.navi label:hover {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #008c9b4d;
+    filter: drop-shadow(3px 5px 2px rgb(146, 2, 134 / 0.4));
+    transition: color 2s;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    background-color: rgba(234, 151, 123, 0);
+    padding-bottom: 0%;
+}
+
+ul.steuerung {
+    list-style-type: none;
+}
+
+ul.steuerung>li {
+    /* background-color: coral; */
+    /* margin-bottom: 5px; */
+    padding: 7px 7px 7px 7px;
+}
+
+/* ul>li:hover {
+    background-color: rgb(53, 248, 183);
+} */
+
+ul.steuerung>li>a {
+    display: block;
+
+    text-decoration: none;
+    text-align: right;
+    color: rgba(146, 2, 134, 0.788);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+ul.steuerung>li>a:hover {
+    color: rgba(253, 151, 34, 0.8);
+    text-shadow: 3px 1px 4px #920286;
+    /* border-bottom: dotted rgba(146, 2, 134, 0.822) 1px; */
+    transition: color 2s;
+}
+
+ul.steuerung>li>a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    background-color: #008c9b4d;
+    transition: ease-in 1s;
+
+}
+
+ul.steuerung>li>a:hover::after {
+    width: 100%;
+
+}
+
+
+#hidden-checkbox:checked~nav {
+    display: block;
+    background-color: #c2f1f788;
+    padding-bottom: 2%;
+}
+
+#hidden-checkbox:checked~nav :hover {
+    display: block;
+    /*background-color: rgba(252, 125, 83, 0.295);*/
+    height: auto;
+    padding-bottom: 0%;
+    transition: color 2s;
+}
+
+
+#hidden-checkbox:checked+label {
+    background: url(../bilder/close.svg);
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    display: inline-block;
+
+}
+
+#hidden-checkbox:checked+label :hover {
+    color: rgba(253, 151, 34, 0.8);
+    filter: drop-shadow(3px 5px 2px rgb(146, 2, 134 / 0.4));
+    transition: color 2s;
+}
+
+hr {
+
+    border: #97e8f1c7 dashed 1px;
+
+}
+
+ion-icon {
+    font-size: 1.6rem;
+    color: #920286c5;
+    font-weight: bolder;
+}
+
+ion-icon:hover {
+    color: #008c9b4d;
+    filter: drop-shadow(3px 5px 2px rgb(146, 2, 134 / 0.4));
+    transition: color 1s;
+}
+
+section.lg {
+    /* position: sticky;
+    z-index: -0;*/
+    margin-top: 3%;
+    flex-basis: 35%;
+}
+
+section.lginnen {
+    width: 25%;
+
+}
+
+@keyframes move-horizontal {
+    100% {
+        margin-left: 20%
+    }
+
+}
+
+object#logo {
+    height: 10vh;
+    /* border: 2px solid black; */
+    animation: move-horizontal 3s linear infinite alternate both;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+
+}
+
+
+main {
+    /*width: 100%;*/
+    height: max-content;
+    /*padding: 2%;*/
+    /*   height: 63%; */
+    background-color: #f5f5f567;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: 0px;
+    bottom: 0%;
+    left: 0px; */
+
+}
+
+div.notloesung {
+    background-color: #f5e5e0a4;
+}
+
+main div#breadcrumb.indieartist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    position: sticky;
+    top: 10%;
+    /*z-index: 10;*/
+}
+
+main div#breadcrumb.indieartist p.breadnav {
+    grid-column: 2;
+    /*width: 25%;*/
+    padding: 5%;
+
+    background-color: #c2f1f788;
+    margin-right: 15px;
+    text-align: right;
+    color: #333333;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main div#breadcrumb.indieartist p.breadnav>a {
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: right;
+    color: rgba(146, 2, 134, 0.788);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+main div#breadcrumb.indieartist p.breadnav>a:hover,
+main.indieartist div#breadcrumb.indieartist div.breadinfo.tooltip>p:hover {
+    color: rgba(253, 151, 34, 0.8);
+    text-shadow: 3px 1px 4px #920286;
+    /* border-bottom: dotted rgba(146, 2, 134, 0.822) 1px; */
+    transition: color 2s;
+}
+
+main div#breadcrumb.indieartist p.breadnav>a::after,
+main.indieartist div#breadcrumb.indieartist div.breadinfo.tooltip>p::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    background-color: rgba(0, 140, 155, 0.3);
+    transition: ease-in 1s;
+
+}
+
+main div#breadcrumb.indieartist p.breadnav>a:hover::after,
+main.indieartist div#breadcrumb.indieartist div.breadinfo.tooltip>p:hover::after {
+    width: 100%;
+
+}
+
+main.indieartist div#breadcrumb.indieartist div.breadinfo {
+    grid-column: 2;
+    /*width: 25%;*/
+    padding: 5%;
+
+    background-color: #c2f1f788;
+    margin-right: 15px;
+    text-align: right;
+    color: rgba(146, 2, 134, 0.788);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo {
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: right;
+    color: rgba(146, 2, 134, 0.788);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+
+}
+
+
+main.indieartist div#breadcrumb.indieartist p.breadnav>a:hover,
+main.indieartist div#breadcrumb.indieartist div.breadinfo.tooltip>p:hover,
+main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo:hover {
+    color: rgba(253, 151, 34, 0.8);
+    text-shadow: 3px 1px 4px #920286;
+    /* border-bottom: dotted rgba(146, 2, 134, 0.822) 1px; */
+    transition: color 2s;
+}
+
+main.indieartist div#breadcrumb.indieartist p.breadnav>a::after,
+main.indieartist div#breadcrumb.indieartist div.breadinfo.tooltip>p::after,
+main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    background-color: #008c9b4d;
+    transition: ease-in 1s;
+
+}
+
+main.indieartist div#breadcrumb.indieartist p.breadnav>a:hover::after,
+main.indieartist div#breadcrumb.indieartist div.breadinfo.tooltip>p:hover::after,
+main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo:hover::after {
+    width: 100%;
+
+}
+
+/*section.mobil {
+    background-color: #f5e5e06c;
+
+}*/
+
+
+section.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #f5e5e0a4;
+    padding: 0 2% 2% 2%;
+}
+
+main.indieartist section.mobil section.article.indieartist.composing,
+main.indieartist section.mobil section.article.indieartist.kunsthandwerk,
+main.indieartist section.mobil section.article.indieartist.fotografie,
+main.indieartist section.mobil section.article.indieartist.illustration,
+main.indieartist section.mobil section.article.indieartist.creativewriting,
+main.indieartist section.mobil section.article.indieartist.audiopoetry,
+main.indieartist section.mobil section.article.indieartist.orangeneouvertüre,
+main.indieartist section.mobil section.article.indieartist.portraet,
+main.indieartist section.mobil section.article.indieartist.quakk,
+main.indieartist section.mobil section.article.indieartist.retrospektive,
+main.indieartist section.mobil section.article.indieartist.alleskuehn,
+main.indieartist section.mobil section.article.indieartist.spielwiese,
+main.indieartist section.mobil section.article.indieartist.historie,
+main.indieartist section.mobil section.article.indieartist.crskunst,
+main.indieartist section.mobil section.article.indieartist.dodolonthium,
+main.indieartist section.mobil section.article.indieartist.github,
+main.indieartist section.mobil section.article.indieartist.freunde,
+main.indieartist section.mobil section.article.indieartist.lyrik,
+main.indieartist section.mobil section.article.indieartist.achtsamkeit,
+main.indieartist section.mobil section.article.indieartist.raunaechte,
+main.indieartist section.mobil section.article.indieartist.maerchen,
+main.indieartist section.mobil section.article.indieartist.reizwortgeschichte,
+main.indieartist section.mobil section.article.indieartist.streuobstwiese {
+    background-color: #f5e5e000;
+}
+
+section.article div#breadcrumb {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    position: sticky;
+    top: 10%;
+    z-index: 10;
+}
+
+section.article div#breadcrumb p.breadnav {
+    grid-column: 2;
+    /*width: 25%;*/
+    padding: 5%;
+
+    background-color: #c2f1f788;
+    margin-right: 10px;
+    text-align: right;
+    color: #333333;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section.article div#breadcrumb p.breadnav>a {
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: right;
+    color: rgba(146, 2, 134, 0.788);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+section.article div#breadcrumb p.breadnav>a:hover {
+    color: rgba(253, 151, 34, 0.8);
+    text-shadow: 3px 1px 4px #920286;
+    /* border-bottom: dotted rgba(146, 2, 134, 0.822) 1px; */
+    transition: color 2s;
+}
+
+section.article div#breadcrumb p.breadnav>a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    background-color: rgba(0, 140, 155, 0.3);
+    transition: ease-in 1s;
+
+}
+
+section.article div#breadcrumb p.breadnav>a:hover::after {
+    width: 100%;
+
+}
+
+section.article h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: #920286;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 5px 5px 10px 5px;
+}
+
+section.article>div.box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+section.article div.box h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: #920286;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px 5px 0px 5px;
+
+}
+
+section.article div.box div.text h4,
+div.box.text div.link-preview div.preview-content h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #181818;
+    padding: 0px 10px 10px 10px;
+}
+
+section.article div.box div.text ul.text {
+    padding-left: 25px;
+}
+
+section.article div.box div.text p,
+div.box.text div.link-preview div.preview-content p.linkvorschau {
+    padding: 0px 10px 10px 10px;
+    text-align: justify;
+}
+
+div.box.text div.link-preview div.preview-content a.linkinvorschau {
+    display: block;
+    padding: 0px 10px 10px 10px;
+    text-decoration: none;
+    text-align: left;
+    color: rgba(146, 2, 134, 0.788);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+
+}
+
+div.box.text div.link-preview div.preview-content a.linkinvorschau:hover {
+    color: rgba(253, 151, 34, 0.8);
+    text-shadow: 3px 1px 4px #920286;
+    /* border-bottom: dotted rgba(146, 2, 134, 0.822) 1px; */
+    transition: color 2s;
+}
+
+
+section.article div.box div.text p,
+section.article div.box div.text ul.text>li,
+div.box.text div.link-preview div.preview-content p.linkvorschau {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #181818;
+
+}
+
+section.article div.box div.text ul.text {
+    list-style-type: none;
+}
+
+section.article div.box div.text ul.text>li {
+    /* background-color: coral; */
+    /* margin-bottom: 5px; */
+    /*padding: 7px 7px 7px 7px;*/
+    list-style-type: none;
+    text-decoration: none;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    padding: 0px 10px 10px 5px;
+}
+
+section.article div.box div.text ul.text>li ion-icon {
+    font-size: 1.3rem;
+    color: #920286c5;
+}
+
+section.article div.box div.text picture.ich {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2% 0% 2% 3%;
+    width: 100%;
+}
+
+section.article>div.box>a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+section.article>div.box>a>picture {
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+picture {
+    width: 80%;
+}
+
+picture img {
+    width: 80%;
+}
+
+#containingBlock {
+    width: 100%;
+    padding: 5%;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe,
+.videoWrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+hr.art {
+    border: #9202862a solid 20px;
+}
+
+p.mobil2,
+p.mobil3 {
+    display: none;
+}
+
+footer {
+    padding: 3% 5% 5% 5%;
+    flex-basis: 100%;
+    height: 12%;
+    font-size: 1.2rem;
+    background-color: rgba(253, 159, 127, 0.87);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+    opacity: 1;
+    align-items: center;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(146, 2, 134, 0.788);
+    text-align: center;
+    /* position: absolute;
+    z-index: 2;
+    top: end;
+    right: 0px;
+    bottom: 0%;
+    left: 0px; */
+}
+
+section.footernav {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    height: 10vh;
+
+}
+
+section.footernav section.footer {
+    flex-basis: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+section.footernav section.footer ul.fn {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    list-style-type: none
+}
+
+ul.fn>li {
+    /* background-color: coral; */
+    /* margin-bottom: 5px; */
+    padding: 7px 7px 7px 7px;
+}
+
+ul.fn>li>a {
+    display: block;
+
+    text-decoration: none;
+    text-align: right;
+    color: rgba(146, 2, 134, 0.788);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+ul.fn>li>a:hover {
+    color: rgba(253, 151, 34, 0.8);
+    text-shadow: 3px 1px 4px #920286;
+    /* border-bottom: dotted rgba(146, 2, 134, 0.822) 1px; */
+    transition: color 2s;
+}
+
+ul.fn>li>a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    background-color: #ea977bd7;
+    transition: ease-in 1s;
+
+}
+
+ul.fn>li>a:hover::after {
+    width: 100%;
+
+}
+
+section.footernav section.copyright {
+    flex-basis: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+ul.fn>li:last-child {
+    display: none;
+}
+
+/*Formular*/
+
+form {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+form * {
+    display: block;
+}
+
+fieldset {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem;
+    margin-top: 0.5em;
+    border: none;
+    border-top: 3px solid rgba(221, 113, 4, 0.926);
+
+
+}
+
+/* remove standard-styles */
+/*input[type='checkbox'],*/
+#drei,
+#vier,
+#fünf,
+#sechs,
+#sieben,
+#acht,
+#neun,
+#zehn,
+#elf,
+#zwölf,
+input[type='radio'],
+input[type='text'],
+input[type='number'],
+input[type='email'],
+textarea,
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    font-size: 1em;
+    width: 100%
+}
+
+/* graceful degradation for ie8 */
+/*input[type='checkbox'],*/
+#drei,
+#vier,
+#fünf,
+#sechs,
+#sieben,
+#acht,
+#neun,
+#zehn,
+#elf,
+#zwölf,
+input[type='radio'],
+input[type='radio'],
+input[type='text'],
+input[type='number'],
+input[type='email'],
+textarea {
+    width: auto;
+    float: left;
+    margin-right: .75em;
+    background: transparent;
+    border: none;
+}
+
+/*input[type='checkbox']:checked,
+input[type='checkbox']:not(:checked),*/
+#drei:checked,
+#vier:checked,
+#fünf:checked,
+#sechs:checked,
+#sieben:checked,
+#acht:checked,
+#neun:checked,
+#zehn:checked,
+#elf:checked,
+#zwölf:checked,
+#drei:not(:checked),
+#vier:not(:checked),
+#fünf:not(:checked),
+#sechs:not(:checked),
+#sieben:not(:checked),
+#acht:not(:checked),
+#neun:not(:checked),
+#zehn:not(:checked),
+#elf:not(:checked),
+#zwölf:not(:checked),
+input[type='radio']:checked,
+input[type='radio']:not(:checked) {
+    background: transparent;
+    position: relative;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+input[type='checkbox']+label,
+
+input[type='radio']+label {
+    cursor: pointer;
+}
+
+/*input[type='checkbox']:checked+label::before,*/
+/*input[type='checkbox']:not(:checked)+label::before,*/
+#drei:checked+label::before,
+#vier:checked+label::before,
+#fünf:checked+label::before,
+#sechs:checked+label::before,
+#sieben:checked+label::before,
+#acht:checked+label::before,
+#neun:checked+label::before,
+#zehn:checked+label::before,
+#elf:checked+label::before,
+#zwölf:checked+label::before,
+#drei:not(:checked)+label::before,
+#vier:not(:checked)+label::before,
+#fünf:not(:checked)+label::before,
+#sechs:not(:checked)+label::before,
+#sieben:not(:checked)+label::before,
+#acht:not(:checked)+label::before,
+#neun:not(:checked)+label::before,
+#zehn:not(:checked)+label::before,
+#elf:not(:checked)+label::before,
+#zwölf:not(:checked)+label::before,
+input[type='radio']:checked+label::before,
+input[type='radio']:not(:checked)+label::before {
+    content: ' ';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 4px;
+    margin-right: 1em;
+
+}
+
+input[type=radio]:checked+label::before,
+input[type=radio]:not(:checked)+label::before {
+    border-radius: 30px;
+}
+
+/*input[type='checkbox']:hover+label::before,
+input[type='radio']:hover+label::before {
+    background: #ddd;
+    box-shadow: inset 0 0 0 2px white;
+}*/
+
+/*input[type='checkbox']:not(:checked)+label::before,*/
+#drei:not(:checked)+label::before,
+#vier:not(:checked)+label::before,
+#fünf:not(:checked)+label::before,
+#sechs:not(:checked)+label::before,
+#sieben:not(:checked)+label::before,
+#acht:not(:checked)+label::before,
+#neun:not(:checked)+label::before,
+#zehn:not(:checked)+label::before,
+#elf:not(:checked)+label::before,
+#zwölf:not(:checked)+label::before,
+input[type='radio']:not(:checked)+label::before {
+    background: hsla(15, 73%, 70%, 0.843);
+    border: 2px rgba(165, 42, 42, 0.4) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.1);
+}
+
+/*input[type='checkbox']:checked+label::before,*/
+#drei:checked+label::before,
+#vier:checked+label::before,
+#fünf:checked+label::before,
+#sechs:checked+label::before,
+#sieben:checked+label::before,
+#acht:checked+label::before,
+#neun:checked+label::before,
+#zehn:checked+label::before,
+#elf:checked+label::before,
+#zwölf:checked+label::before,
+input[type='radio']:checked+label::before {
+    background-color: rgba(246, 121, 79, 0.559);
+    border: 2px rgba(206, 158, 158, 0.6) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.3);
+
+}
+
+textarea {
+    resize: vertical;
+    background-color: hsla(15, 73%, 70%, 0.843);
+    border: 2px rgba(165, 42, 42, 0.4) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.1);
+    padding: 0.7em;
+    caret-color: brown;
+}
+
+textarea:focus {
+    background: rgba(233, 150, 122, 0.6);
+    border: 2px rgba(165, 42, 42, 0.6) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.3);
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='date'] {
+    background-color: hsla(15, 73%, 70%, 0.843);
+    border: 2px rgba(165, 42, 42, 0.4) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.1);
+    caret-color: brown;
+    padding: 0.7em;
+}
+
+input[type='text']:focus,
+input[type='number']:focus,
+input[type='email']:focus,
+input[type='date']:focus {
+    background: rgba(233, 150, 122, 0.6);
+    border: 2px rgba(165, 42, 42, 0.6) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.3);
+}
+
+
+
+select {
+    background-color: hsla(15, 73%, 70%, 0.843);
+    border: 2px rgba(165, 42, 42, 0.4) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.1);
+    padding: 0.7em;
+}
+
+select:focus {
+    background: rgba(233, 150, 122, 0.6);
+    border: 2px rgba(165, 42, 42, 0.6) solid;
+    box-shadow: 3px 3px 3px 3px rgba(75, 56, 115, 0.3);
+}
+
+section.prod {
+    margin-top: 50px;
+}
+
+fieldset.produkts input,
+fieldset.produkts label {
+    display: inline-block;
+}
+
+fieldset.produkts>div>div input,
+fieldset.produkts>div>div label {
+    display: inline;
+
+}
+
+fieldset.button {
+    margin: 20px 0 0 0;
+}
+
+fieldset.button>legend {
+    margin-bottom: 20px;
+}
+
+form section.prod fieldset.produkts div h4.form {
+    margin: 30px 0 10px 0;
+    color: #920286c5;
+}
+
+legend {
+    color: #181818;
+    font-weight: bold;
+
+}
+
+#btn {
+    background-color: #920286c5;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        /*border: #ea977b solid 10px;*/
+        box-sizing: border-box;
+    }
+
+    object#logo {
+        height: 15vh;
+    }
+
+    section.lg {
+        flex-basis: 25%;
+        margin-top: 1%;
+        margin-left: 3%;
+    }
+
+    section.lginnen {
+        width: 25%;
+
+    }
+
+    /*div.responsiblevideo iframe {
+        max-width: 100%;
+    }*/
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        /*border: 10px solid hotpink;*/
+        box-sizing: border-box;
+        line-height: 1.5;
+
+    }
+
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        grid-template-areas:
+            ". . . . . . . . . . . ."
+            "logo logo . . . naviation navigation navigation navigation navigation navigation  navigation"
+            "logo logo . . . navigation navigation navigation navigation navigation navigation navigation";
+
+        height: 32vh;
+        padding: 0px 15px 0px 0px;
+        font-size: 1rem;
+        gap: 15px;
+
+    }
+
+    div.naviaußen {
+        grid-column: 4 / 12;
+        grid-row: 2 / 3;
+        column-gap: 0px;
+        background-color: rgba(234, 151, 123, 0);
+        padding: 0px;
+    }
+
+    section.navi {
+
+        padding: 1% 1% 0% 0%;
+
+    }
+
+    header div.naviaußen section.navi label {
+        display: none;
+    }
+
+    header div.naviaußen section.navi label:hover {
+        display: none;
+    }
+
+
+    #hidden-checkbox:checked~nav {
+        display: none;
+    }
+
+    #hidden-checkbox:checked+label {
+        display: none;
+
+    }
+
+    #hidden-checkbox:checked+label :hover {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    ul.steuerung {
+        list-style-type: none;
+    }
+
+    div.naviaußen section.navi nav>ul.steuerung {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        justify-content: flex-end;
+        align-items: stretch;
+    }
+
+    ul.steuerung>li {
+        display: inline-block;
+        background-color: #c2f1f788;
+        width: 12vw;
+        margin: 0;
+        padding: 8px 6px 5px 5px;
+        text-align: right;
+    }
+
+    ul.steuerung>li>a {
+        text-decoration: none;
+        color: #920286;
+        font-weight: bold;
+        font-size: 1.3rem;
+
+
+    }
+
+    hr.trenn {
+        display: none;
+    }
+
+    ion-icon:hover {
+        color: #008c9b4d;
+        filter: drop-shadow(3px 5px 2px rgb(146, 2, 134 / 0.4));
+        transition: color 1s;
+    }
+
+
+    section.lg {
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+
+    }
+
+    section.lginnen {
+        width: 25%;
+
+    }
+
+    @keyframes move-horizontal {
+        100% {
+            margin-left: 40%
+        }
+
+    }
+
+    object#logo {
+        height: 20vh;
+        animation: move-horizontal 1.5s linear infinite alternate both;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+
+
+    }
+
+    main {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /*padding: 0px;*/
+        /*gap: 5%;*/
+        padding-right: 9%;
+        padding-left: 15%;
+    }
+
+    main.howiam {
+        display: grid;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        padding: 0px;
+    }
+
+    main.howiam section.article.ichhowiam div#breadcrumb p.breadnav {
+        font-size: 1.5rem;
+    }
+
+    main.howiam section.article.ichhowiam div#breadcrumb p.breadnav>a {
+
+        font-size: 1.3rem;
+    }
+
+    main.kontaktmain {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        padding: 0px;
+        background-color: rgba(245, 245, 245, 0.404);
+    }
+
+    main.kontaktmain section.article.kontaktsection div#breadcrumb p.breadnav {
+        font-size: 1.5rem;
+    }
+
+    main.kontaktmain section.article.kontaktsection div#breadcrumb p.breadnav>a {
+
+        font-size: 1.3rem;
+    }
+
+    main.indieartist {
+        display: flex;
+        /*display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0px;*/
+    }
+
+    main.indieartist div.notloesung {
+        background-color: #f5e5e0a4;
+        /*padding-right: 0%;*/
+
+    }
+
+    main.indieartist div#breadcrumb.indieartist {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        position: sticky;
+        top: 10%;
+        /*z-index: 10;*/
+    }
+
+    main.indieartist div#breadcrumb.indieartist p.breadnav {
+        grid-column: 3;
+        /*width: 25%;*/
+        padding: 2%;
+
+        background-color: #c2f1f788;
+        /*margin-right: 10px;*/
+        text-align: right;
+        color: #333333;
+        font-size: 1.5rem;
+    }
+
+    main.indieartist div#breadcrumb.indieartist p.breadnav>a {
+        display: block;
+        padding-top: 10px;
+        text-decoration: none;
+        text-align: right;
+        color: rgba(146, 2, 134, 0.788);
+        font-weight: bolder;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3rem;
+
+    }
+
+    main.indieartist div#breadcrumb.indieartist div.breadinfo {
+
+        display: grid;
+        /*grid-template-columns: repeat(3, 1fr);*/
+        grid-column: 3;
+        /*width: 25%;*/
+        padding: 2%;
+
+        background-color: #c2f1f788;
+        /*margin-right: 10px;*/
+        text-align: right;
+        color: rgba(146, 2, 134, 0.788);
+        font-weight: bolder;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3rem;
+
+    }
+
+    main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo {
+        display: block;
+        padding-top: 10px;
+        text-decoration: none;
+        text-align: right;
+        color: rgba(146, 2, 134, 0.788);
+        font-weight: bolder;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3rem;
+
+    }
+
+
+    main.indieartist div#breadcrumb.indieartist p.breadnav>a:hover,
+    main.indieartist div#breadcrumb.indieartist div.breadinfo.tooltip>p:hover,
+    main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo:hover {
+        color: rgba(253, 151, 34, 0.8);
+        text-shadow: 3px 1px 4px #920286;
+        /* border-bottom: dotted rgba(146, 2, 134, 0.822) 1px; */
+        transition: color 2s;
+    }
+
+    main.indieartist div#breadcrumb.indieartist p.breadnav>a::after,
+    main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 10px;
+        background-color: rgba(0, 140, 155. 0.3);
+        transition: ease-in 1s;
+
+    }
+
+    main.indieartist div#breadcrumb.indieartist p.breadnav>a:hover::after,
+    main.indieartist div#breadcrumb.indieartist div.breadinfo div.bottom>p>a.breadinfo:hover::after {
+        width: 100%;
+
+    }
+
+    section.mobil.indieartist {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0px;
+        column-gap: 30px;
+        row-gap: 30px;
+
+    }
+
+    section.mobil.indieartist hr.art {
+        display: none;
+    }
+
+    section.article.ich {
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    section.article.ichhowiam {
+        grid-row: 1;
+        grid-column: 1;
+        padding-right: 9%;
+        padding-left: 15%;
+    }
+
+    section.article.kontaktsection {
+        grid-row: 1;
+        grid-column: 1;
+        padding-right: 9%;
+    }
+
+    section.article.indieartist.composing.desktop {
+        grid-row: 1;
+        grid-column: 1;
+        /*margin-bottom: 30px;*/
+        background-color: #f5e5e07c;
+        background-blend-mode: luminosity;
+    }
+
+    section.article.indieartist.kunsthandwerk.desktop {
+        grid-row: 1;
+        grid-column: 2;
+
+        /*margin-bottom: 30px;*/
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.lyrik.desktop {
+        grid-row: 1;
+        grid-column: 2;
+        margin-right: 10%;
+        /*margin-bottom: 30px;*/
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.spielwiese.desktop {
+        margin-right: 10%;
+        grid-row: 1;
+        grid-column: 2;
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.fotografie.desktop {
+        grid-row: 2;
+        grid-column: 1;
+        /*margin-right: 30px;*/
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.illustration.desktop {
+        grid-row: 2;
+        grid-column: 2;
+        /*margin-right: 10%;*/
+        /*margin-right: 30px;*/
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.achtsamkeit.desktop {
+        grid-row: 2;
+        grid-column: 2;
+        margin-right: 10%;
+        /*margin-right: 30px;*/
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.historie.desktop {
+        grid-row: 2;
+        grid-column: 2;
+        margin-right: 10%;
+        /*margin-right: 30px;*/
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.creativewriting.desktop {
+        grid-row: 3;
+        grid-column: 1;
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.audiopoetry.desktop {
+        grid-row: 3;
+        grid-column: 2;
+        /*margin-right: 10%;*/
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.raunaechte.desktop {
+        grid-row: 3;
+        grid-column: 2;
+        margin-right: 10%;
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.crskunst.desktop {
+        grid-row: 3;
+        grid-column: 2;
+        margin-right: 10%;
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.portraet.desktop {
+        /*margin-right: 10%;*/
+        grid-row: 4;
+        grid-column: 2;
+
+    }
+
+    section.article.indieartist.maerchen.desktop {
+        margin-right: 10%;
+        grid-row: 4;
+        grid-column: 2;
+
+    }
+
+    section.article.indieartist.streuobstwiese.desktop {
+        margin-right: 10%;
+        grid-row: 4;
+        grid-column: 2;
+        background-color: #f5e5e07c;
+    }
+
+    section.article.indieartist.dodolonthium.desktop {
+        margin-right: 10%;
+        grid-row: 7;
+        grid-column: 2;
+        background-color: #f5e5e07c;
+
+    }
+
+    section.article.indieartist.retrospektive.desktop {
+        /*margin-right: 10%;*/
+        grid-row: 5;
+        grid-column: 2;
+
+
+    }
+
+    section.article.indieartist.reizwortgeschichte.desktop {
+        margin-right: 10%;
+        grid-row: 5;
+        grid-column: 2;
+
+
+    }
+
+    section.article.indieartist.github.desktop {
+        margin-right: 10%;
+        grid-row: 5;
+        grid-column: 2;
+        background-color: #f5e5e07c;
+
+    }
+
+    section.article.indieartist.alleskuehn.desktop {
+        margin-right: 10%;
+        grid-row: 6;
+        grid-column: 2;
+        background-color: #f5e5e07c;
+
+    }
+
+    section.article.indieartist.freunde.desktop {
+        /*margin-right: 10%;*/
+        grid-row: 6;
+        grid-column: 1;
+        background-color: #f5e5e07c;
+
+    }
+
+
+
+    section.article.indieartist.kunsthandwerk.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.illustration.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.audiopoetry.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.portraet.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.retrospektive.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.achtsamkeit.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.lyrik.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.raunaechte.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.maerchen.desktop div.box.text div.link-preview div.preview-content p.linkvorschau,
+    section.article.indieartist.reizwortgeschichte.desktop div.box.text div.link-preview div.preview-content p.linkvorschau {
+        font-size: 1.6rem;
+    }
+
+
+    div.text.kontaktdiv {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    form.desktop {
+        width: 70%;
+    }
+
+    #btn.desktop {
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+
+    section.article.ichhowiam h2.ichhowiam {
+        font-size: 3rem;
+
+    }
+
+    section.article.ichhowiam div.box div.text h4.ichhowiam {
+        font-size: 2rem;
+    }
+
+    section.article div.box div.text h3.ichhowiam {
+        font-size: 2.2rem;
+    }
+
+    section.article div.box div.text p.ichhowiam,
+    section.article div.box div.text ul.text li.ichhowiam {
+        font-size: 1.6rem;
+    }
+
+    section.article.job {
+        grid-row: 1;
+        grid-column: 2;
+        margin-bottom: 30px;
+    }
+
+    section.article.web {
+        grid-row: 2;
+        grid-column: 1;
+        margin-right: 30px;
+    }
+
+    section.article.artist {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+
+    main>hr.art {
+        display: none;
+        /*border: #9202862a solid 20px;*/
+    }
+
+    picture {
+        width: 80%;
+    }
+
+    picture img {
+        width: 90%;
+    }
+
+    picture.ich {
+        width: 60%;
+    }
+
+    picture.ich img {
+        width: 60%;
+    }
+
+    section.dasauge {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    section.dasauge p.mobil.ichhowiam {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    section.dasauge p.mobil2.ichhowiam {
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    section.dasauge p.mobil3.ichhowiam {
+        grid-column: 1;
+        grid-row: 3;
+
+    }
+
+
+    p.mobil2.ichhowiam,
+    p.mobil3.ichhowiam {
+        display: inline-block;
+    }
+
+    footer {
+        /*padding-top: 10px;*/
+        width: 100%;
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+
+    }
+
+    section.footernav section.footer ul.fn>li {
+        justify-content: center;
+        background-color: rgba(234, 151, 123, 0);
+    }
+
+    section.footernav section.footer ul.fn>li>a {
+        text-align: center;
+    }
+
+
+
+}

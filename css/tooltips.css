@@ -1,0 +1,107 @@
+.tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
+    
+}
+
+.tooltip .bottom {
+    max-width: 230px; 
+    /*top:40px;*/
+    left:50%;
+    margin-top: 20px;
+    transform:translate(-50%, 0);
+    padding:10px 10px;
+    color:#444444;
+    background-color:rgba(253, 222, 180, 0.89);
+    font-weight:normal;
+    font-size:1.3rem;;
+    border-radius:0px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(250, 164, 52, 0.5);
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltip:hover .bottom {
+    visibility:visible; opacity:1;
+}
+
+.tooltip .bottom i {
+    position:absolute;
+    bottom:100%;
+    left:50%;
+    margin-left:-32px;
+    width:64px;
+    height:22px;
+    overflow:hidden;
+}
+
+.tooltip .bottom i::after {
+    content:'';
+    position:absolute;
+    width:32px;
+    height:32px;
+    left:50%;
+    transform:translate(-50%,50%) rotate(45deg);
+    background-color:rgba(253, 222, 180, 0.89);
+    box-shadow:0 1px 8px  rgba(250, 164, 52, 0.5);
+}
+
+
+@media screen and (min-width: 992px) {
+    .tooltip {
+        display:inline-block;
+        position:relative;
+        border-bottom:1px dotted #666;
+        text-align:left;
+        
+    }
+    
+    .tooltip .bottom {
+        min-width:200px; 
+        top: 35px;
+        left:50%;
+        margin-top: 20px;
+        transform:translate(-50%, 0);
+        padding:10px 20px;
+        color:#444444;
+        background-color:rgba(253, 222, 180, 0.89);
+        font-weight:normal;
+        font-size:13px;
+        border-radius:0px;
+        position:absolute;
+        z-index:99999999;
+        box-sizing:border-box;
+        box-shadow:0 1px 8px rgba(250, 164, 52, 0.5);
+        visibility:hidden; opacity:0; transition:opacity 0.8s;
+    }
+    
+    .tooltip:hover .bottom {
+        visibility:visible; opacity:1;
+    }
+    
+    .tooltip .bottom i {
+        position:absolute;
+        bottom:100%;
+        left:50%;
+        margin-left:-32px;
+        width:64px;
+        height:22px;
+        overflow:hidden;
+    }
+    
+    .tooltip .bottom i::after {
+        content:'';
+        position:absolute;
+        width:32px;
+        height:32px;
+        left:50%;
+        transform:translate(-50%,50%) rotate(45deg);
+        background-color:rgba(253, 222, 180, 0.89);
+        box-shadow:0 1px 8px  rgba(250, 164, 52, 0.5);
+    }
+
+}

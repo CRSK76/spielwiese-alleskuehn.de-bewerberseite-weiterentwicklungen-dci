@@ -1,0 +1,16 @@
+div.box.text div.link-preview div.preview-content h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #181818;
+    padding: 0px 10px 10px 10px;
+};
+
+div.box.text div.link-preview div.preview-content p.linkvorschau {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #181818;
+
+}
